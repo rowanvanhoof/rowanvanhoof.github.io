@@ -7,7 +7,7 @@
 body {
 	line-height: 1.6em;
 	font-size: 20px;
-	background-color: #F4F2EC;
+	background-color: #F9FEF9;
 	font-family: 'Roboto', sans-serif;
 }
 h1,
@@ -68,7 +68,7 @@ button {
 	}
 
 	.header {
-		background-color: #F4F2EC;
+		background-color: #F9FEF9;
 		color: #0E3746;
 	}
 }
