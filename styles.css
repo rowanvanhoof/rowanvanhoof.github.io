@@ -48,7 +48,31 @@ button {
 	padding: 10px 20px;
 	cursor: pointer;
 }
+.container {
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 0 1rem;
+}
 
+.responsive-image {
+  max-width: 100%;
+}
+
+.cell img {
+  display: block;
+}
+.cell {
+	margin: 1rem;
+}
+a:visited {
+	color: #0E3746;
+}
+a {
+	color: #0E3746;
+}
+a:hover {
+	font-weight: bold;
+}
 @media only screen and (min-width: 50em) {
 	
 	.subsection {
@@ -71,6 +95,14 @@ button {
 		background-color: #F9FEF9;
 		color: #0E3746;
 	}
+	.cell {
+    width: calc(33.3333% - 2rem);
+  	}
+  	.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  	}
 }
 /*
 @media only screen and (min-width: 505px) and (max-width: 799px){
