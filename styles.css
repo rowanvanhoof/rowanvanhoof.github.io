@@ -38,18 +38,19 @@ ul {
 	padding: 0 10px 0 10px;
 }
 button {
-	margin: 10px 0px 10px 10px;
+	margin: 10px 10px 10px 10px;
 	font-size: 16px;
 	font-weight: bold;
 	color: #0E3746;
-	background-color: #F4F2EC;
+	background-color: #F9FEF9;
 	border: 3px solid #0E3746;
 	border-radius: 3px;
 	padding: 10px 20px;
 	cursor: pointer;
+	
 }
 button:hover {
-	color: #F4F2EC;
+	color: #F9FEF9;
 	background-color: #0E3746;
 }
 
@@ -69,24 +70,22 @@ button:hover {
 
 
 a:visited {
-	color: #0E3746;
+	color: #BE2623;
 }
 
 a:hover {
 	font-weight: bold;
+	text-decoration: underline;
 }
 
 a {
-	color: #0E3746;
-	}
+	color: #BE2623;
+	text-decoration: none;
+}
 
 
 @media only screen and (min-width: 50em) {
-	body {
-		display: flex;
-		justify-content: flex-start;
-		flex-wrap: wrap;
-	}
+	
 	.subsection {
 		display: flex;
 		justify-content: space-between;	
@@ -107,6 +106,7 @@ a {
 		background-color: #F9FEF9;
 		color: #0E3746;
 	}
+
 	.cell {
     width: calc(33.3333% - 2rem);
   	}
@@ -115,6 +115,7 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
   	}
+  	
   	
 }
 /*
