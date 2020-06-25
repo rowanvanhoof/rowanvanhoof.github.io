@@ -54,12 +54,6 @@ button:hover {
 }
 
 
-.container {
-  margin: 0 auto;
-  max-width: 50em;
-  padding: 0 1rem;
-}
-
 .responsive-image {
   max-width: 100%;
 }
