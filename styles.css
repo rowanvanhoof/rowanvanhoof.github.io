@@ -32,7 +32,9 @@ ul {
 	list-style-type: circle;
 	list-style-position: inside;
 }
-
+li {
+	padding-bottom: 5px;
+}
 .subsection {
 	border-top: 1px solid #DBE8DC;
 	padding: 0 10px 0 10px;
