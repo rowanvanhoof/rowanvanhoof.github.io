@@ -76,13 +76,13 @@ a:visited {
 }
 
 a:hover {
-	/*font-weight: bold;*/
+	font-weight: bold;
 	text-decoration: underline;
 }
 
 a {
 	color: #BE2623;
-	text-decoration: none;
+	/*text-decoration: none;*/
 }
 
 
