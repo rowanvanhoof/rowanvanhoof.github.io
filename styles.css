@@ -37,11 +37,13 @@ h4 {
 
 ul {
     list-style-type: circle;
-    list-style-position: inside;
+    list-style-position: outside;
+    padding-left: 1.6rem;
 }
 
 li {
     padding-bottom: .625rem;
+    
     
 }
 
@@ -117,7 +119,7 @@ a {
         width: 100%;
 
     }
-    
+
     .exp {
         padding: .625rem 0;
     }
