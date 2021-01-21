@@ -22,6 +22,7 @@ h2,
 h3,
 h4 {
     font-family: 'Roboto', sans-serif;
+    line-height: 3rem;
     padding: .625rem 1.25rem .625rem 0rem;
     font-weight: 300;
     color: #f7a655;
@@ -31,6 +32,7 @@ h4 {
     color: #F9FEF9;
     border-left: 1px solid #f7a655;
     border-right: 1px solid #f7a655;
+
 }
 
 ul {
@@ -115,10 +117,7 @@ a {
         width: 100%;
 
     }
-    .subsection-item:selection {
-        background-color: #f7a655;
-            }
-
+    
     .exp {
         padding: .625rem 0;
     }
