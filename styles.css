@@ -190,12 +190,15 @@ p {
 }
 
 @media only screen and (min-width: 107rem) {
+	.main-section {
+		width: 85%;
 
+	}
 	.main-buttons {
 		display: flex;
 		justify-content: space-around;
 		
-		width: 80%;
+		
 		padding: 1rem 0;
 		margin: 2rem auto;
 
@@ -209,7 +212,7 @@ p {
 	}
 
 	.main-topic {
-		width: 80%;
+		width: 100%;
 		margin: 2rem auto;
 
 	}
