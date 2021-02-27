@@ -32,7 +32,7 @@ if($_POST) {
 	         . 'From: ' . $email_addr . "\r\n";
 
 	$subject = 'New message from: ' . $full_name;
-	mail($receive,  )
+	mail($receive,  $subject, $msg_body, $headers)
 } else {
 	echo '<p>Error</p>';
 }
