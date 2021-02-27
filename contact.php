@@ -32,7 +32,13 @@ if($_POST) {
 	         . 'From: ' . $email_addr . "\r\n";
 
 	$subject = 'New message from: ' . $full_name;
-	mail($receive,  $subject, $msg_body, $headers)
+
+	if(mail($recipient, $subject, $msg_body, $headers)) {
+        echo "<p>Thank you for contacting me, $full_name, you can expect a reply within 24 hours</p>";
+    } else {
+        echo '<p>Sorry but the email did not go through.</p>';
+    }
+	
 } else {
 	echo '<p>Error</p>';
 }
