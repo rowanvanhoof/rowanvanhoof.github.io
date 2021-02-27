@@ -136,6 +136,81 @@ p {
 	
 }
 
+.form-row {
+
+
+	width: 95%;
+	padding: .5rem 0;
+	margin: .625rem 0;
+}
+
+.form-row input[type='text'] {
+	font-size: 1.5rem;
+	font-weight: 100;
+	font-family: 'Roboto', sans-serif; 
+	border: 2px solid #888888;
+	border-radius: 2px;
+
+	padding: .625rem;
+	width: 95%;
+	margin: .625rem 0;
+
+	background-color: #F9FEF9;
+}
+
+.form-row label {
+	font-size: 2rem;
+	font-weight: 300;
+
+	margin: 1rem .625rem;
+}
+
+textarea {
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 100;
+	font-size: 1.5rem;
+
+	border: 2px solid #888888;
+	border-radius: 2px;
+
+	padding: .625rem;
+	width: 95%;
+	margin: .625rem 0;
+	height: 8rem;
+
+	background-color: #F6FBF6;
+
+	resize: vertical;
+}
+
+.send_msg {
+	font-weight: 300;
+	font-size: 1.5rem;
+
+	background-color: #212624;
+	color: #ce822e;
+
+	padding: .625rem 0;
+	width: 95%;
+	margin: .625rem;
+
+	border: 2px solid #888888;
+	border-radius: 2px;
+
+}
+
+
+@media only screen and (min-width: 27rem) {
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+
+		margin: .625rem auto;
+		width: 80%;
+		
+	}
+}
+
 @media only screen and (min-width: 54.2rem) {
 	.main-buttons {
 		display: flex;
@@ -157,6 +232,11 @@ p {
 		margin: 0 .625rem;
 		width: 75%;
 	
+	}
+
+	.contact-form {
+		margin: .625rem auto;
+		width: 60%;
 	}
 
 }
@@ -183,6 +263,24 @@ p {
 		line-height: 2.5rem;
 
 		margin: 1rem 0;
+
+	}
+
+	.form-row input[type='text'] {
+		font-size: 2.4rem;
+	}
+
+	.form-row label {
+		font-size: 3rem;
+	}
+
+	textarea {
+		font-size: 2.4rem;
+		height: 11rem;
+	}
+
+	.send_msg {
+		font-size: 2.4rem;
 
 	}
 
