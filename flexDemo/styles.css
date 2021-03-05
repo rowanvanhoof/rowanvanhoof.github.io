@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 16px;
+}
+
+.flexDemo-container {
+	font-size: 1.5rem;
+	width: 80%;
+	margin: .625rem auto;
+	display: flex;
+	flex-direction: space-around;
+}
+
+.inner-box {
+	padding: .625rem;
+	margin: .625rem;
+	background-color: red;
+	width: 66%;
+}
+
+.row {
+	/*display: flex;*/
+	
+	background-color: blue;
+	margin: .625rem;
+	padding: .625rem;
+}
+#outer-container {
+	background-color: green;
+	width: 100%;
+	
+}
+
+.toggle {
+	position: relative;
+	display: inline-block;
+
+	width: 100px;
+	height: 52px;
+
+	background-color: #999999;
+	border-radius: 30px;
+
+	border: 2px solid blue;
+
+	padding-top: 20px;
+}
+
+
+
+.toggle:after {
+	content: '';
+	position: absolute;
+
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+
+	background-color: grey;
+	top: 1px;
+	left: 1px;
+
+	transition: all 0.1s;
+}
+
+.checkbox:checked + .toggle::after {
+	left: 49px;
+}
+
+.checkbox:checked + .toggle {
+	background-color: green;
+}
+
+.checkbox {
+	display: none;
+}
+.control-row {
+	margin: .625rem;
+	padding: .625rem;
+}
+pre code {
+	font-size: 1.5rem;
+	background-color: #eee;
+	border: 1px solid #999;
+	display: block;
+	padding: .625rem;
+	margin: .625rem;
+  
+}
+.demo-container {
+	margin: .625rem;
+	padding: .625rem;
+	width: 100%;
+}
+#block-container {
+	margin: .625rem;
+	padding: .625rem;
+
+}
