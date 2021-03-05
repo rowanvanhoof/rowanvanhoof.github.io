@@ -1,0 +1,99 @@
+<!DOCTYPE html lang='en'>
+<html>
+
+<head>
+    <title>
+        Flexbox Visualization
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href='styles.css'>
+    
+</head>
+<body>
+	<section class="flexDemo-container">
+	<section id="control">
+		<div class="control-row">
+		<h2>Flex Blue</h2>
+		<input type="checkbox" id="switch1" class="checkbox"/>
+		<label for="switch1" class="toggle">
+		</div>
+		<div class="control-row">
+		<h2>Flex Red</h2>
+		<input type="checkbox" id="switch2" class="checkbox"/>
+		<label for="switch2" class="toggle">
+		</div>
+			
+	</section>
+	<div class="demo-container">
+	<h2>
+		Flexbox demo
+	</h2>
+	<section id="outer-container">
+	
+		<div class = "row" id="row1">
+			<p class="inner-box">Box 1</p>
+			<p class="inner-box">Box 2</p>
+			<p class="inner-box">Box 3</p>
+		</div>
+		<div class = "row" id="row2">
+			<p class="inner-box">Box 1</p>
+			<p class="inner-box">Box 2</p>
+			<p class="inner-box">Box 3</p>
+		</div>
+		<div class = "row" id="row3">
+			<p class="inner-box">Box 1</p>
+			<p class="inner-box">Box 2</p>
+			<p class="inner-box">Box 3</p>
+		</div>
+	</section>
+	</div>
+	
+	<section id="block-container">
+<h2>
+	Html and CSS code
+</h2>
+<pre><code>&ltsection id=&quotouter-container&quot&gt
+	&ltdiv class = &quotrow&quot&gt
+		&ltp class=&quotinner-box&quot&gtBox 1&lt/p&gt
+		&ltp class=&quotinner-box&quot&gtBox 2&lt/p&gt
+		&ltp class=&quotinner-box&quot&gtBox 3&lt/p&gt
+	&lt/div&gt
+	&ltdiv class = &quotrow&quot&gt
+		&ltp class=&quotinner-box&quot&gtBox 1&lt/p&gt
+		&ltp class=&quotinner-box&quot&gtBox 2&lt/p&gt
+		&ltp class=&quotinner-box&quot&gtBox 3&lt/p&gt
+	&lt/div&gt
+	&ltdiv class = &quotrow&quot&gt
+		&ltp class=&quotinner-box&quot&gtBox 1&lt/p&gt
+		&ltp class=&quotinner-box&quot&gtBox 2&lt/p&gt
+		&ltp class=&quotinner-box&quot&gtBox 3&lt/p&gt
+	&lt/div&gt
+&lt/section&gt
+</code>
+</pre>
+
+<pre><code>#outer-container {
+	display: <span id="outer-containerDispBlock">block;</span><span id="outer-containerDispFlex" style="visibility: hidden">flex;</span>
+	background-color: green;
+	width: 100%;
+}
+.row {
+	display: <span id="rowDispBlock">block;</span><span id="rowDispFlex" style="visibility: hidden;">flex;</span>
+	background-color: blue; 
+	margin: 1rem;
+	padding: 1rem;
+}
+.inner-box {
+	padding: 1rem;
+	margin: 1rem;
+	background-color: red;
+	width: 66%;
+}
+</code>
+</pre>
+		
+	</section>
+	<script type="text/javascript" src="script.js"></script>
+</section>
+</body>
