@@ -6,23 +6,44 @@
 
 html {
     font-size: 16px;
+    background-color: grey;
 }
 
 .flexDemo-container {
-	font-size: 1.5rem;
-	width: 80%;
-	margin: .625rem auto;
-	display: flex;
-	flex-direction: space-around;
+	font-size: 2.5rem;
+	
+	margin: 0 auto;
+	padding: 1rem;
+	
+	width: 90%;
+	
+	background: orange;
 }
 
 .inner-box {
-	padding: .625rem;
-	margin: .625rem;
+	margin: .5rem;
+	padding: .5rem;
 	background-color: red;
-	width: 66%;
-}
 
+	
+}
+p {
+	margin: 1rem auto;
+}
+.demo-container {
+	background-color: pink;
+	margin: 0 auto;
+	padding: 1rem;
+
+}
+.bruh {
+	display: flex;
+	
+	flex-grow: 4;
+	background-color: yellow;
+	padding: 1rem;
+	margin: 1rem;
+}
 .row {
 	/*display: flex;*/
 	
@@ -32,10 +53,23 @@ html {
 }
 #outer-container {
 	background-color: green;
-	width: 100%;
+	
 	
 }
+#block-container {
+	background-color: teal;
+	margin: 0 auto;
+	width: 50%;
 
+
+}
+#control {
+	background-color: purple;
+	margin: 0 auto;
+	padding: 1rem;
+	
+	
+}
 .toggle {
 	position: relative;
 	display: inline-block;
@@ -85,7 +119,7 @@ html {
 	padding: .625rem;
 }
 pre code {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	background-color: #eee;
 	border: 1px solid #999;
 	display: block;
@@ -102,4 +136,9 @@ pre code {
 	margin: .625rem;
 	padding: .625rem;
 
+}
+@media only screen and (min-width: 50rem){
+	.flexDemo-container {
+		display: flex;
+	}
 }
