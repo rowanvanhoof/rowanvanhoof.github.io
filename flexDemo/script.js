@@ -1,34 +1,45 @@
 const switch1Elements = ["outer-container"];
-const switch1CodeBlock = ["outer-containerDispBlock", "outer-containerDispFlex"];
+const switch1Styles = ["block", "flex"];
 
 const switch2Elements = ["row1", "row2", "row3"];
-const switch2CodeBlock = ["rowDispBlock", "rowDispFlex"];
+const switch2Styles = ["block", "flex"];
 
 
-switchControls("switch1", switch1Elements, switch1CodeBlock);
-switchControls("switch2", switch2Elements, switch2CodeBlock);
+switchControls("switch1", switch1Elements, switch1Styles);
+switchControls("switch2", switch2Elements, switch2Styles);
 
-function switchControls (controlId, elementId, codeBlockId) {
+
+//This function allows any checkbox to control the styles
+//of any set of elements. The paramters are as follows 
+//switchControls(ID of checkbox, ID of element being controlled, styles)
+function switchControls (controlId, elementId, styles) {
 	const controlIdAlt = "#" + controlId;
-	const cb = document.querySelector(controlIdAlt);
+	const sw = document.querySelector(controlIdAlt);
    
-    var state = cb.dataset.switchState;
-    cb.setAttribute(state, "off" );
+    var state = sw.dataset.switchState;
+    sw.setAttribute(state, "off" );
     
-    cb.onclick = () => {
-		const result = cb.value;
+    sw.onclick = () => {
+		const result = sw.value;
 		var switch1 = document.getElementById(controlId);
 		
 		if(switch1.getAttribute(state) == "off"){
 			for (var i = 0; i < elementId.length; i++) {
-				document.getElementById(elementId[i]).style.display = "flex";
-				switch1.setAttribute(state, "on" );
+			document.getElementById(elementId[i]).style.display = styles[1];
+			switch1.setAttribute(state, "on" );
+			return 1;
+
 			}
+
+			
+
 		}else {
 			for (var i = 0; i < elementId.length; i++) {
-				document.getElementById(elementId[i]).style.display = "block";
-				switch1.setAttribute(state, "off" );
+			document.getElementById(elementId[i]).style.display = styles[0];	
+			switch1.setAttribute(state, "off" );	
 			}
+
+			
 		}
 
 		
