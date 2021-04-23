@@ -27,7 +27,7 @@ function switchControls (controlId, elementId, styles) {
 			for (var i = 0; i < elementId.length; i++) {
 			document.getElementById(elementId[i]).style.display = styles[1];
 			switch1.setAttribute(state, "on" );
-			return 1;
+			//return 1;
 
 			}
 
